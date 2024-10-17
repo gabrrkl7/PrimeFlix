@@ -1,46 +1,68 @@
-.meus-filmes{
+.meus-filmes {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 16px;
 }
 
-.meus-filmes h1{
+.meus-filmes h1 {
     margin-bottom: 14px;
 }
 
-.meus-filmes span{
+.meus-filmes span {
     font-size: 18px;
+    text-align: center;
 }
 
-.meus-filmes ul{
-   width: 720px;
+.meus-filmes ul {
+    width: 100%;
+    max-width: 720px;
+    padding: 0;
 }
 
-.meus-filmes ul li{
+.meus-filmes ul li {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 14px;
+    width: 100%;
+    text-align: center;
 }
 
-.meus-filmes div{
+.meus-filmes div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
-.meus-filmes div a{
+.meus-filmes div a {
     text-decoration: none;
     color: #116feb;
-    margin-right: 14px;
+    margin: 4px 0;
 }
 
-.meus-filmes img{
-    width: 200px;
-    max-width: 100%;
+.meus-filmes img {
+    width: 100%;
+    max-width: 200px;
     max-height: 300px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .meus-filmes ul li {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .meus-filmes div {
+        flex-direction: row;
+    }
+
+    .meus-filmes div a {
+        margin: 0 14px;
+    }
 }
