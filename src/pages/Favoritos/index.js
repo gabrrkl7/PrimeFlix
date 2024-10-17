@@ -28,7 +28,7 @@ function Favoritos(){
         <div className="meus-filmes">
             <h1>Meus Filmes</h1>
 
-            {filmes.length == 0 && <span>Você não possui nenhum filme salvo, para salvar, acesse <Link to={"/"}> Home </Link> </span>  }
+            {filmes.length === 0 && <span>Você não possui nenhum filme salvo, para salvar, acesse <Link to={"/"}> Home </Link> </span>  }
 
         <ul>
             {filmes.map((item)=> {

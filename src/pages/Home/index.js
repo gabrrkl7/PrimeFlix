@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import api from '../../services/api';
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 import { Link } from "react-router-dom";
 import './home.css';
 
